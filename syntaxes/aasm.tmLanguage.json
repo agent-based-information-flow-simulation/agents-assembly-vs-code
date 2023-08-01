@@ -77,16 +77,16 @@
 					"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\.([a-zA-Z_][a-zA-Z0-9_]*)\\b",
 					"captures": {
 						"0":{
-							"name": "support.type"
+							"name": "variable.parameter"
 						},
 						"1": {
-							"name": "support.constant"
+							"name": "support.type"
 						}
 					}
 				},
 				{
-					"match": "(?<=created_messages,\\s)(send|rcv)\\b",
-					"name": "support.type"
+					"match": "(?<=.*,?\\s)(send|rcv)\\b",
+					"name": "variable.parameter"
 				},
                 {
                     "match": "\\b(send|add|adde|set|subs|rand|len|igt|subt|reme|eblock)\\b",
@@ -101,7 +101,7 @@
 					"name": "variable.parameter"
 				},
 				{
-					"match": "\\b(connections|connCount|msgRCount|msgSCount)\\b",
+					"match": "\\b(connections|connCount|msgRCount|msgSCount|self)\\b",
 					"name": "variable.parameter"
 				},
 				{
