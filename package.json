@@ -1,0 +1,25 @@
+{
+  "name": "aasm",
+  "displayName": "AASM",
+  "description": "Syntax highlighting for Agents Assembly (AASM)",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "aasm",
+      "aliases": ["Agents Assembly", "aasm"],
+      "extensions": [".aasm",".mod"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "aasm",
+      "scopeName": "source.aasm",
+      "path": "./syntaxes/aasm.tmLanguage.json"
+    }]
+  }
+}
