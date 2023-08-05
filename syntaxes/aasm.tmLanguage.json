@@ -101,12 +101,20 @@
 					"name": "variable.parameter"
 				},
 				{
-					"match": "\\b(connections|connCount|msgRCount|msgSCount|self)\\b",
+					"match": "\\b(connections|connCount|msgRCount|msgSCount|self|media_user_connections|information_source_connections)\\b",
 					"name": "variable.parameter"
 				},
 				{
 					"match": "\\b(float|dist|normal|init|uniform|list|msg|modify_self|cyclic|conn|setup)\\b",
 					"name": "keyword.other"
+				},
+				{
+					"match": "!\\w+",
+					"name": "constant.character"
+				},
+				{
+					"match": "\\*",
+					"name": "constant.character"
 				},
                 {
                     "match": "\\b(\\d+)\\b",

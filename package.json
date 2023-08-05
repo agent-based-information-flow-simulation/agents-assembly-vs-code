@@ -13,7 +13,7 @@
     "languages": [{
       "id": "aasm",
       "aliases": ["Agents Assembly", "aasm"],
-      "extensions": [".aasm",".mod"],
+      "extensions": [".aasm",".aasm.mod"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
